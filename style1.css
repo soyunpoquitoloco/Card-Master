@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Russo One', sans-serif;
+}
+
+.wrapper {
+    background-color: #862727;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+svg text {
+    animation: stroke 8s infinite alternate;
+    stroke-width: 2;
+    stroke: rgb(216, 232, 43);
+    font-size: 410%;
+    color: rgb(216, 232, 43);
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(216, 232, 43);
+        stroke: rgb(255, 255, 255);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+    70% {
+        fill: rgb(216, 232, 43);
+        stroke: rgb(255, 255, 255);
+    }
+    100% {
+        fill: rgba(216, 232, 43);
+        stroke: rgba(255, 255, 255, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
+
+
+
+.back-button {
+    display: inline-block;
+    height: 50%;
+    background-color: #e40000;
+    color: #000000; /* Couleur du texte */
+    text-decoration: none; /* Pas de soulignement */
+    border-radius: 5px; /* Coins arrondis */
+    margin: 20px 0; /* Espacement autour du bouton */
+    text-align: center; /* Centrer le texte */
+}
+
+section {
+    background: #ffffff;
+    margin: 20px 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #000000; 
+    text-align: center;
+}
+
+h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+ul, ol {
+    padding-left: 20px; /* Espacement pour les listes */
+}
+
+ul li, ol li {
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+}
+
+img {
+    max-width: 100%; /* Limiter la largeur des images */
+    height: auto; /* Conserver le ratio d'aspect */
+    display: block; /* Rendre l'image un bloc */
+    margin: 20px auto; /* Centrer l'image */
+}
+
+@media screen and (max-width: 800px) {
+    .back-button {
+        width: 100%; /* Rendre le bouton plein écran sur mobile */
+    }
+    section {
+        margin: 10px; /* Réduire l'espacement sur mobile */
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <title>Card Master</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>function updatemenu() {
+        if (document.getElementById('responsive-menu').checked == true) {
+          document.getElementById('menu').style.borderBottomRightRadius = '0';
+          document.getElementById('menu').style.borderBottomLeftRadius = '0';
+        }else{
+          document.getElementById('menu').style.borderRadius = '10px';
+        }
+      }
+      </script>
+</head>
+<body>
+    <div class="wrapper">
+        <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Card Master
+            </text>
+        </svg>
+    </div>
+      <header>
+        <h1>Welcome, wanna play ?</h1>
+    </header>
+    <a href="family.html" class="banner"><p>Family Games</p><img src="sprites/famille.jpg" alt="Image famille"></a>
+    <a href="money.html" class="banner"><p>Betting Games </p><img src="sprites/argent.jpg" alt="Image argent"></a>
+    <a href="boire.html" class="banner"><p>Drinking Games</p><img src="sprites/boire.jpg" alt="Image boisson"></a>
+</body>
+</html>
