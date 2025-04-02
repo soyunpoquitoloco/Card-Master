@@ -6,8 +6,8 @@
     <title>Card Master</title>
     <link rel="stylesheet" href="style1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -17,11 +17,19 @@
             </text>
         </svg>
     </div>
-      <main>
+    <main>
         <a href="index.html" class="back-button">Back</a>
+        <nav>
+            <ul>
+                <li><a href="#" class="game-link" data-target="rami">Rummy</a></li>
+                <li><a href="#" class="game-link" data-target="uno">Homemade Uno</a></li>
+                <li><a href="#" class="game-link" data-target="belote">Belote</a></li>
+                <li><a href="#" class="game-link" data-target="crazy_eights">Crazy eights</a></li>
+                <li><a href="#" class="game-link" data-target="spades">Spades</a></li>
+            </ul>
+        </nav>
         <section id="rami">
             <h2>Rummy</h2>
-            <img src="image_rami.jpg" alt="Rummy">
             <p><strong>Number of players:</strong> 2 to 6 players.</p>
             <p><strong>Equipment:</strong> A deck of 54 cards (52 cards + 2 jokers).</p>
             <h3>Game Objective:</h3>
@@ -73,7 +81,6 @@
 
         <section id="uno">
             <h2>Homemade Uno</h2>
-            <img src="image_uno.jpg" alt="Homemade Uno">
             <p><strong>Number of players:</strong> 2 to 10 players.</p>
             <p><strong>Equipment:</strong> A deck of 54 cards (52 cards + 2 jokers). To play Uno, you can use numbered cards and face cards, assigning them specific values and actions.</p>
             <h3>Game Objective:</h3>
@@ -130,7 +137,6 @@
 
         <section id="belote">
             <h2>Belote</h2>
-            <img src="image_belote.jpg" alt="Belote">
             <p><strong>Number of players:</strong> 4 players (in teams of 2).</p>
             <p><strong>Equipment:</strong> A deck of 32 cards (the cards from 7 to 10, face cards, and aces of each suit: hearts, diamonds, clubs, spades).</p>
             <h3>Game Objective:</h3>
@@ -193,6 +199,128 @@
                 <li><strong>Management of Trumps:</strong> Keep your trumps for critical moments. Do not play them too early.</li>
             </ul>
         </section>
+        <section id="crazy_eights">
+            <h2>Crazy Eights</h2>
+            <p><strong>Number of players:</strong> 2 to 7 players.</p>
+            <p><strong>Equipment:</strong> A deck of 54 cards (52 cards + 2 jokers).</p>
+            <h3>Game Objective:</h3>
+            <p>The objective of Crazy Eights is to be the first player to get rid of all your cards. Players take turns playing cards that match the rank or suit of the top card on the discard pile.</p>
+            <h3>Game Rules:</h3>
+            <ul>
+                <li><strong>Dealing Cards:</strong>
+                    <ul>
+                        <li>Each player receives 5 cards if there are 4 or more players, or 7 cards if there are 3 or fewer players.</li>
+                        <li>The remaining cards form the draw pile, and the top card is turned over to start the discard pile.</li>
+                    </ul>
+                </li>
+                <li><strong>Playing a Turn:</strong>
+                    <ul>
+                        <li>On their turn, a player must play a card that matches the rank or suit of the top card on the discard pile.</li>
+                        <li>If a player cannot play a card, they must draw one card from the draw pile. If the drawn card can be played, they may do so immediately; otherwise, their turn ends.</li>
+                    </ul>
+                </li>
+                <li><strong>Special Cards:</strong>
+                    <ul>
+                        <li>Eights are wild and can be played at any time. The player who plays an eight can choose the suit that the next player must follow.</li>
+                        <li>Aces can be played to skip the next player's turn.</li>
+                        <li>Jokers can be used as wild cards, similar to eights, and can also change the suit.</li>
+                    </ul>
+                </li>
+                <li><strong>End of the Game:</strong>
+                    <p>The game ends when a player has played all their cards. The other players then count the points of their remaining cards. Numbered cards (2 to 10) are worth their face value, face cards (jacks, queens, kings) are worth 10 points, and eights and jokers are worth 20 points. The player with the fewest points is the winner.</p>
+                </li>
+            </ul>
+            <h3>Variants of Crazy Eights:</h3>
+            <ul>
+                <li><strong>Crazy Eights Countdown:</strong> Players play until one player reaches a certain number of points (e.g., 100 points) over multiple rounds.</li>
+                <li><strong>Crazy Eights with Teams:</strong> Players can form teams of two, and teammates can share information about their cards but cannot show them.</li>
+                <li><strong>Crazy Eights with Additional Wild Cards:</strong> Introduce additional wild cards (e.g., all face cards) to increase the game's complexity.</li>
+            </ul>
+            <h3>Strategic Tips:</h3>
+            <ul>
+                <li><strong>Card Counting:</strong> Keep track of the cards that have been played to anticipate what your opponents might have.</li>
+                <li><strong>Hold onto Eights:</strong> Save your eights for strategic moments when you can change the suit to your advantage.</li>
+                <li><strong>Play High-Value Cards Early:</strong> Try to get rid of high-value cards early in the game to minimize points if someone else goes out.</li>
+                <li><strong>Observe Opponents:</strong> Pay attention to the cards your opponents are drawing and playing to gauge their strategies.</li>
+            </ul>
+        </section>
+        <section id="spades">
+            <h2>Spades</h2>
+            <p><strong>Number of players:</strong> 4 players (in teams of 2).</p>
+            <p><strong>Equipment:</strong> A deck of 54 cards (52 cards + 2 jokers).</p>
+            <h3>Game Objective:</h3>
+            <p>The objective of Spades is to accurately predict the number of tricks your team will take in each round and to achieve that number. The first team to reach a predetermined number of points (usually 500) wins the game.</p>
+            <h3>Game Rules:</h3>
+            <ul>
+                <li><strong>Dealing Cards:</strong>
+                    <ul>
+                        <li>Each player receives 13 cards, dealt one at a time.</li>
+                        <li>The remaining cards are set aside and not used in the game.</li>
+                    </ul>
+                </li>
+                <li><strong>Bidding:</strong>
+                    <ul>
+                        <li>After looking at their cards, each player makes a bid on the number of tricks they believe they can take. Bids are made in turn, starting with the player to the dealer's left.</li>
+                        <li>Players can bid any number from 0 to 13, and teams can combine their bids.</li>
+                    </ul>
+                </li>
+                <li><strong>Playing a Hand:</strong>
+                    <ul>
+                        <li>The player to the dealer's left leads the first trick by playing any card except a spade.</li>
+                        <li>Players must follow suit if able; if they cannot, they may play a spade or any other card.</li>
+                        <li>The highest card of the leading suit wins the trick unless a spade is played, in which case the highest spade wins.</li>
+                    </ul>
+                </li>
+                <li><strong>Scoring:</strong>
+                    <p>At the end of each round, teams score points based on the number of tricks they won compared to their bids:</p>
+                    <ul>
+                        <li>If a team meets or exceeds their bid, they score 10 points for each trick bid.</li>
+                        <li>If a team fails to meet their bid, they lose 10 points for each trick they bid.</li>
+                        <li>Each additional trick won beyond the bid is worth 1 point.</li>
+                    </ul>
+                </li>
+                <li><strong>End of the Game:</strong>
+                    <p>The game continues until one team reaches 500 points. The team with the highest score at that point wins the game.</p>
+                </li>
+            </ul>
+            <h3>Variants of Spades:</h3>
+            <ul>
+                <li><strong>Jokers Wild:</strong> In this variant, the two jokers are added to the deck and can be played as wild cards.</li>
+                <li><strong>Nil Bids:</strong> Players can choose to bid "nil," meaning they will not take any tricks. If successful, they earn bonus points; if they take a trick, they lose points.</li>
+                <li><strong>Partnership Spades:</strong> Players can form partnerships with different rules for scoring and bidding, allowing for more strategic play.</li>
+            </ul>
+            <h3>Strategic Tips:</h3>
+            <ul>
+                <li><strong>Evaluate Your Hand:</strong> Assess your cards carefully to make an accurate bid. Consider the number of high cards and potential spades.</li>
+                <li><strong>Communicate with Your Partner:</strong> Use bids and plays to signal your hand strength to your partner without revealing too much to opponents.</li>
+                <li><strong>Control the Game:</strong> Try to lead with high cards to force opponents to play their spades early, allowing you to control the flow of the game.</li>
+                <li><strong>Watch Your Opponents:</strong> Pay attention to the cards played by opponents to gauge their strength and adjust your strategy accordingly.</li>
+            </ul>
+        </section>
     </main>
+    <script>
+        // Script pour afficher/masquer les sections de jeu
+        document.querySelectorAll('.game-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                const targetId = this.getAttribute('data-target');
+                const targetSection = document.getElementById(targetId);
+                
+                // Masquer toutes les sections
+                document.querySelectorAll('section').forEach(section => {
+                    if (section !== targetSection) {
+                        section.style.display = 'none';
+                    }
+                });
+
+                // Afficher ou masquer la section ciblée
+                if (targetSection.style.display === 'block') {
+                    targetSection.style.display = 'none';
+                } else {
+                    targetSection.style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

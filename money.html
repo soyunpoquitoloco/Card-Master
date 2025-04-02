@@ -19,9 +19,16 @@
     </div>
       <main>
         <a href="index.html" class="back-button">Back</a>
+        <nav>
+            <ul>
+                <li><a href="#" class="game-link" data-target="poker">Poker (Texas Hold'em)</a></li>
+                <li><a href="#" class="game-link" data-target="blackjack">Blackjack</a></li>
+                <li><a href="#" class="game-link" data-target="baccarat">Baccarat</a></li>
+                <li><a href="#" class="game-link" data-target="three_card_poker">3-card poker</a></li>
+            </ul>
+        </nav>
         <section id="poker">
             <h2>Poker (Texas Hold'em)</h2>
-            <img src="image_poker.jpg" alt="Poker (Texas Hold'em)">
             <p><strong>Number of players:</strong> 2 to 10</p>
             <p><strong>Setup:</strong> A deck of 54 cards (52 cards + 2 jokers).</p>
             <h3>Rules:</h3>
@@ -48,6 +55,205 @@
                 <li>Do not play every hand; choose your starting cards wisely. A good selection of starting hands can increase your chances of long-term success.</li>
             </ul>
         </section>
+        <section id="blackjack">
+            <h2>Blackjack</h2>
+            <p><strong>Number of players:</strong> 1 to 7 players (against the dealer).</p>
+            <p><strong>Equipment:</strong> A deck of 54 cards (52 cards + 2 jokers) and chips for betting.</p>
+            <h3>Game Objective:</h3>
+            <p>The objective of Blackjack is to beat the dealer by having a hand value closer to 21 without exceeding it. Players aim to have a higher total than the dealer without going over 21.</p>
+            <h3>Game Rules:</h3>
+            <ul>
+                <li><strong>Card Values:</strong>
+                    <ul>
+                        <li>Number cards (2-10) are worth their face value.</li>
+                        <li>Face cards (kings, queens, jacks) are worth 10 points.</li>
+                        <li>Aces can be worth 1 or 11 points, depending on which value benefits the hand more.</li>
+                    </ul>
+                </li>
+                <li><strong>Dealing Cards:</strong>
+                    <ul>
+                        <li>Each player is dealt two cards, and the dealer is dealt one card face up and one card face down (the hole card).</li>
+                    </ul>
+                </li>
+                <li><strong>Player's Turn:</strong>
+                    <ul>
+                        <li>Players can choose to "Hit" (take another card) or "Stand" (keep their current hand).</li>
+                        <li>Players can continue to hit until they choose to stand or exceed 21 (bust), which results in an automatic loss.</li>
+                    </ul>
+                </li>
+                <li><strong>Dealer's Turn:</strong>
+                    <ul>
+                        <li>After all players have completed their turns, the dealer reveals their hole card.</li>
+                        <li>The dealer must hit until their hand totals 17 or higher (some casinos require the dealer to hit on a "soft 17," which includes an Ace valued as 11).</li>
+                    </ul>
+                </li>
+                <li><strong>Winning the Game:</strong>
+                    <p>Players win if their hand is closer to 21 than the dealer's hand without busting. The payouts are as follows:</p>
+                    <ul>
+                        <li>Winning against the dealer: 1:1 payout.</li>
+                        <li>Blackjack (an Ace and a 10-point card): 3:2 payout.</li>
+                        <li>If the dealer busts, all remaining players win.</li>
+                        <li>If a player and the dealer tie, it is a "push," and the player retains their bet.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Variants of Blackjack:</h3>
+            <ul>
+                <li><strong>European Blackjack:</strong> Players are dealt only one card face up initially, and the dealer's hole card is not revealed until after players have completed their turns.</li>
+                <li><strong>Spanish 21:</strong> Played with a Spanish deck (no 10s), offering additional bonuses and rules that favor the player.</li>
+                <li><strong>Blackjack Switch:</strong> Players are dealt two hands and can switch the second card of each hand to create stronger hands.</li>
+            </ul>
+            <h3>Strategic Tips:</h3>
+            <ul>
+                <li><strong>Know When to Hit or Stand:</strong> Familiarize yourself with basic strategy charts that indicate the best action based on your hand and the dealer's upcard.</li>
+                <li><strong>Manage Your Bankroll:</strong> Set a budget for your gambling session and stick to it to avoid losing more than you can afford.</li>
+                <li><strong>Pay Attention to the Dealer's Upcard:</strong> The dealer's visible card can give you clues about their potential hand and help you make better decisions.</li>
+                <li><strong>Practice Good Betting Strategy:</strong> Consider varying your bet sizes based on your confidence in your hand and the dealer's upcard.</li>
+            </ul>
+        </section>
+        <section id="baccarat">
+            <h2>Baccarat</h2>
+            <p><strong>Number of players:</strong> 1 to 14 players (against the dealer).</p>
+            <p><strong>Equipment:</strong> A deck of 54 cards (52 cards + 2 jokers) and chips for betting.</p>
+            <h3>Game Objective:</h3>
+            <p>The objective of Baccarat is to bet on which hand will have a total value closest to 9: the "Player" hand, the "Banker" hand, or a tie.</p>
+            <h3>Game Rules:</h3>
+            <ul>
+                <li><strong>Card Values:</strong>
+                    <ul>
+                        <li>Number cards (2-9) are worth their face value.</li>
+                        <li>Tens and face cards (kings, queens, jacks) are worth 0 points.</li>
+                        <li>Aces are worth 1 point.</li>
+                    </ul>
+                </li>
+                <li><strong>Dealing Cards:</strong>
+                    <ul>
+                        <li>Two hands are dealt: one for the Player and one for the Banker. Each hand receives two cards.</li>
+                        <li>Players can place bets on either the Player hand, the Banker hand, or a Tie before the cards are dealt.</li>
+                    </ul>
+                </li>
+                <li><strong>Calculating Scores:</strong>
+                    <ul>
+                        <li>The total value of each hand is calculated by adding the values of the two cards. If the total exceeds 9, only the last digit is considered (e.g., a total of 15 counts as 5).</li>
+                    </ul>
+                </li>
+                <li><strong>Third Card Rule:</strong>
+                    <p>Depending on the total of the Player and Banker hands, a third card may be drawn according to specific rules:</p>
+                    <ul>
+                        <li>If the Player's total is 0-5, they draw a third card.</li>
+                        <li>If the Player stands, the Banker draws a third card if their total is 0-5.</li>
+                        <li>There are additional rules for the Banker drawing a third card based on the Player's third card.</li>
+                    </ul>
+                </li>
+                <li><strong>Winning the Game:</strong>
+                    <p>The hand with the total closest to 9 wins. Winning bets are paid out as follows:</p>
+                    <ul>
+                        <li>Player bet wins: 1:1 payout.</li>
+                        <li>Banker bet wins: 1:1 payout (minus a 5% commission).</li>
+                        <li>Tie bet wins: 8:1 or 9:1 payout, depending on the casino.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Variants of Baccarat:</h3>
+            <ul>
+                <li><strong>Punto Banco:</strong> The most common version of Baccarat played in casinos, where players bet on the outcome of the Player or Banker hands.</li>
+                <li><strong>Baccarat Chemin de Fer:</strong> A version where players take turns being the Banker and can make decisions on drawing a third card.</li>
+                <li><strong>Baccarat Banque:</strong> Similar to Chemin de Fer, but the Banker position is more permanent, and players can bet against the Banker.</li>
+            </ul>
+            <h3>Strategic Tips:</h3>
+            <ul>
+                <li><strong>Bet on the Banker:</strong> Statistically, betting on the Banker has a slightly better chance of winning, even with the commission.</li>
+                <li><strong>Avoid Tie Bets:</strong> While the payout is tempting, the odds of a tie are low, making it a less favorable bet.</li>
+                <li><strong>Manage Your Bankroll:</strong> Set a budget for your gaming session and stick to it to avoid overspending.</li>
+                <li><strong>Stay Calm and Enjoy:</strong> Baccarat is a game of chance, so enjoy the experience and avoid getting too caught up in the betting.</li>
+            </ul>
+        </section>
+        <section id="three_card_poker">
+            <h2>Three Card Poker</h2>
+            <p><strong>Number of players:</strong> 1 or more players (against the dealer).</p>
+            <p><strong>Equipment:</strong> A deck of 54 cards (52 cards + 2 jokers) and chips for betting.</p>
+            <h3>Game Objective:</h3>
+            <p>The objective of Three Card Poker is to make the best three-card hand possible and beat the dealer's hand. Players can also place additional bets on the "Pair Plus" side bet.</p>
+            <h3>Game Rules:</h3>
+            <ul>
+                <li><strong>Placing Bets:</strong>
+                    <ul>
+                        <li>Players begin by placing an ante bet to participate in the game. They can also place a "Pair Plus" bet if they wish to bet on the strength of their hand.</li>
+                    </ul>
+                </li>
+                <li><strong>Dealing Cards:</strong>
+                    <ul>
+                        <li>Each player and the dealer are dealt three cards face down.</li>
+                    </ul>
+                </li>
+                <li><strong>Player's Turn:</strong>
+                    <ul>
+                        <li>After viewing their cards, players must decide whether to "play" by placing a second bet equal to their ante or "fold," forfeiting their ante bet.</li>
+                    </ul>
+                </li>
+                <li><strong>Dealer's Hand:</strong>
+                    <p>The dealer must have a qualifying hand of at least a Queen high to play. If the dealer does not qualify:</p>
+                    <ul>
+                        <li>Players who have placed an ante bet win even money on their bet.</li>
+                        <li>Players who have placed a Pair Plus bet win according to the payout table based on their hand strength.</li>
+                    </ul>
+                </li>
+                <li><strong>Showdown:</strong>
+                    <p>If the dealer qualifies, the hands are compared:</p>
+                    <ul>
+                        <li>If the player's hand beats the dealer's hand, the player wins even money on both the ante and play bets.</li>
+                        <li>If the dealer's hand beats the player's hand, the player loses both bets.</li>
+                        <li>If the hands tie, the bets push (are returned to the player).</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Hand Rankings:</h3>
+            <p>The hand rankings in Three Card Poker are as follows (from highest to lowest):</p>
+            <ul>
+                <li>Straight Flush</li>
+                <li>Three of a Kind</li>
+                <li>Straight</li>
+                <li>Flush</li>
+                <li>Pair</li>
+                <li>High Card</li>
+            </ul>
+            <h3>Variants of Three Card Poker:</h3>
+            <ul>
+                <li><strong>Six Card Bonus:</strong> An additional side bet that pays out based on the best five-card hand made from the player's three cards and the dealer's three cards.</li>
+                <li><strong>Progressive Jackpot:</strong> Some casinos offer a progressive jackpot side bet that can lead to large payouts based on specific hand combinations.</li>
+            </ul>
+            <h3>Strategic Tips:</h3>
+            <ul>
+                <li><strong>Know When to Play or Fold:</strong> A common strategy is to play hands of Queen-6-4 or better, as these have a higher chance of winning against the dealer.</li>
+                <li><strong>Consider the Pair Plus Bet:</strong> This bet can be appealing if you have a good chance of getting a strong hand, but be aware of the house edge.</li>
+                <li><strong>Manage Your Bankroll:</strong> Set a budget for your gaming session and stick to it to avoid overspending.</li>
+                <li><strong>Practice Makes Perfect:</strong> Familiarize yourself with the game rules and strategies through practice, either online or in low-stakes games.</li>
+            </ul>
+        </section>
     </main>
+    <script>
+        // Script pour afficher/masquer les sections de jeu
+        document.querySelectorAll('.game-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                const targetId = this.getAttribute('data-target');
+                const targetSection = document.getElementById(targetId);
+                
+                // Masquer toutes les sections
+                document.querySelectorAll('section').forEach(section => {
+                    if (section !== targetSection) {
+                        section.style.display = 'none';
+                    }
+                });
+
+                // Afficher ou masquer la section ciblée
+                if (targetSection.style.display === 'block') {
+                    targetSection.style.display = 'none';
+                } else {
+                    targetSection.style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

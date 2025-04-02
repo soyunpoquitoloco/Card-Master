@@ -6,8 +6,8 @@
     <title>Card Master</title>
     <link rel="stylesheet" href="style1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -17,15 +17,8 @@
             </text>
         </svg>
     </div>
-    <main>
+      <main>
         <a href="index.html" class="back-button">Back</a>
-        <nav>
-            <ul>
-                <li><a href="#" class="game-link" data-target="rami">Rummy</a></li>
-                <li><a href="#" class="game-link" data-target="uno">Homemade Uno</a></li>
-                <li><a href="#" class="game-link" data-target="belote">Belote</a></li>
-            </ul>
-        </nav>
         <section id="rami">
             <h2>Rummy</h2>
             <img src="image_rami.jpg" alt="Rummy">
@@ -201,29 +194,5 @@
             </ul>
         </section>
     </main>
-    <script>
-        // Script pour afficher/masquer les sections de jeu
-        document.querySelectorAll('.game-link').forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault(); // Empêche le comportement par défaut du lien
-                const targetId = this.getAttribute('data-target');
-                const targetSection = document.getElementById(targetId);
-                
-                // Masquer toutes les sections
-                document.querySelectorAll('section').forEach(section => {
-                    if (section !== targetSection) {
-                        section.style.display = 'none';
-                    }
-                });
-
-                // Afficher ou masquer la section ciblée
-                if (targetSection.style.display === 'block') {
-                    targetSection.style.display = 'none';
-                } else {
-                    targetSection.style.display = 'block';
-                }
-            });
-        });
-    </script>
 </body>
 </html>
